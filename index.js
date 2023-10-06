@@ -1,9 +1,6 @@
-let qtdWin  = 80;
-let qtdLose = 15;
 
-
-function calcRanked(){
-    let saldoVitorias = qtdWin - qtdLose;
+function calcRanked(win,lose){
+    let saldoVitorias = win - lose;
 
     switch(true){
         case saldoVitorias < 10:
@@ -37,4 +34,4 @@ function calcRanked(){
     console.log("O Héroi tem saldo de "+saldoVitorias+" Vitórias e está no nivel de "+nivel)
 }
 
-calcRanked()
+calcRanked(10,5)
